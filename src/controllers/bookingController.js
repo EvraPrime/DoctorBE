@@ -1,4 +1,5 @@
 const Hospital = require('../model/hospital');
+const Patient = require('../model/patient');
 require('dotenv').config();
 
 const getAllHospital = async (req, res) => {

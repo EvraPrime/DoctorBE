@@ -1,12 +1,12 @@
+const jwt = require('jsonwebtoken');
 const User = require('../model/user');
 require('dotenv').config();
 
 const getProfile = async (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) 
-    return res.sendStatus(401);
+    return res.status(401).json({ 'message': "No JWT" });
   const refreshToken = cookies.jwt;
-
   const foundUser = await User.findOne({refreshToken: refreshToken});
   if (!foundUser) 
     return res.sendStatus(403); //Forbidden 
@@ -23,6 +23,7 @@ const getProfile = async (req, res) => {
             { expiresIn: '50m' }
         );
         res.json({ 
+          "userID": foundUser.userID,
           "username": foundUser.username,
           "email": foundUser.email,
           accessToken })

@@ -1,1 +1,9 @@
 20221119	09:02:39	b54a7c93-908e-4b6d-b98f-d0f047335282	Error: Not allowed by CORS
+20221217	16:14:40	46da2f92-0b73-4299-8701-3e26cbac795b	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:14:41	ca25ae6d-adc7-4e51-a516-6f3d42c51586	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:19:17	951d49dc-0245-4263-9530-7e8759b0a79e	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:19:17	6094f2db-b1fa-4e37-b10f-121ab0c923af	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:22:49	4ed32866-f8ad-420d-943e-a5727578d6cb	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:22:49	b953f26a-955c-43cc-b3aa-8d904b6d5b68	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:26:32	d4f43d73-69b5-4250-ac26-b7597d124fd1	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'
+20221217	16:26:32	8786278c-e142-406c-86d6-0934b104b537	Error: ENOENT: no such file or directory, stat 'C:\Users\Asus\Desktop\DoctorBE\src\views\404.html'

@@ -46,9 +46,10 @@ app.use('/refresh', require('./routes/refresh'));
 app.use('/sign-out', require('./routes/logout'));
 app.use('/profile', require('./routes/api/profiles'));
 app.use('/blogs' , require('./routes/api/blogs'));
-app.use('/booking' , require('./routes/api/booking'));
 
 app.use(verifyJWT);
+app.use('/booking' , require('./routes/api/booking'));
+app.use('/patients' , require('./routes/api/patients'));
 app.use('/employees', require('./routes/api/employees'));
 
 app.all('*', (req, res) => {
