@@ -9,6 +9,10 @@ const HospitalsSchema = mongoose.Schema({
   address: {
     type: String,
     require: true,
+  },
+  image: {
+    type: String,
+    require: false,
   }
 })
 

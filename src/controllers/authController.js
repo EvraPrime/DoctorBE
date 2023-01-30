@@ -6,9 +6,9 @@ require('dotenv').config();
 const handleSignIn = async (req, res) => {
     const userSignIn = req.body;
     const foundUser = await User.findOne({username: userSignIn.username})
-    if (!foundUser) {
+    if (!foundUser || !userSignIn.password) {
         return res.status(400).json({
-            message: "Invaild Username or Passwordaaa"
+            'message': "Tên tài khoản hoặc mật khẩu không hợp lệ"
         })
     }
     const match = await bcrypt.compare(userSignIn.password, foundUser.password);
@@ -32,8 +32,8 @@ const handleSignIn = async (req, res) => {
             token: accessToken
         })
     } else {
-        return res.json({
-            message: "Invaild Username or Password"
+        return res.status(400).json({
+            'message': "Error"
         })
     }
 }

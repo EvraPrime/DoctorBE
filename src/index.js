@@ -49,6 +49,7 @@ app.use('/blogs' , require('./routes/api/blogs'));
 
 app.use(verifyJWT);
 app.use('/booking' , require('./routes/api/booking'));
+app.use('/bills', require('./routes/api/bills'));
 app.use('/patients' , require('./routes/api/patients'));
 app.use('/employees', require('./routes/api/employees'));
 

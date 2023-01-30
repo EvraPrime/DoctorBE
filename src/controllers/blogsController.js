@@ -11,4 +11,15 @@ const getAllNews = async (req, res) => {
   })
 }
 
-module.exports = { getAllNews }
+const getNewsByName = async (req, res) => {
+  console.log(req.query.title)
+  Blog.find({ title: req.query.title }, function(err, result) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.json(result)
+    }
+  })
+}
+
+module.exports = { getAllNews, getNewsByName }
